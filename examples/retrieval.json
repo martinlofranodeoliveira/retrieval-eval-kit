@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "corpusDocIds": [
+    "doc-auth-mfa",
+    "doc-auth-session",
+    "doc-backup-daily",
+    "doc-backup-restore",
+    "doc-billing-invoice",
+    "doc-billing-refund",
+    "doc-deploy-canary",
+    "doc-deploy-rollback",
+    "doc-incident-sev1",
+    "doc-incident-postmortem"
+  ],
+  "queries": [
+    {
+      "id": "q-01",
+      "relevantDocIds": [
+        "doc-auth-mfa"
+      ],
+      "rankedDocIds": [
+        "doc-auth-mfa",
+        "doc-auth-session",
+        "doc-incident-sev1"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "q-02",
+      "relevantDocIds": [
+        "doc-backup-daily",
+        "doc-backup-restore"
+      ],
+      "rankedDocIds": [
+        "doc-deploy-canary",
+        "doc-backup-restore",
+        "doc-backup-daily",
+        "doc-billing-invoice"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "q-03",
+      "relevantDocIds": [
+        "doc-deploy-canary",
+        "doc-deploy-rollback"
+      ],
+      "rankedDocIds": [
+        "doc-deploy-rollback",
+        "doc-incident-sev1"
+      ],
+      "decision": "answer"
+    },
+    {
+      "id": "q-04",
+      "relevantDocIds": [
+        "doc-incident-sev1"
+      ],
+      "rankedDocIds": [
+        "doc-incident-postmortem",
+        "doc-deploy-canary",
+        "doc-billing-invoice",
+        "doc-incident-sev1"
+      ],
+      "decision": "abstain"
+    },
+    {
+      "id": "q-05",
+      "relevantDocIds": [],
+      "rankedDocIds": [
+        "doc-billing-invoice",
+        "doc-billing-refund"
+      ],
+      "decision": "abstain"
+    },
+    {
+      "id": "q-06",
+      "relevantDocIds": [],
+      "rankedDocIds": [
+        "doc-auth-session"
+      ],
+      "decision": "abstain"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "fixtureVersion": 1,
+  "synthetic": true,
+  "description": "Invented document snippets and manually assigned question labels for the offline ranking demo. These are not operational instructions or descriptions of a real service.",
+  "documents": [
+    {
+      "id": "doc-auth-mfa",
+      "text": "In this invented workshop application, enrollment of a second authentication factor is recorded on the MFA settings screen. The enrollment guide covers registering that factor."
+    },
+    {
+      "id": "doc-auth-session",
+      "text": "The invented workshop application's session guide describes the fictional session-expiry indicator and the sign-out button. It does not describe second-factor enrollment."
+    },
+    {
+      "id": "doc-backup-daily",
+      "text": "The synthetic backup checklist describes creating a daily backup artifact and recording its fictional artifact identifier. Restoration is described in a separate guide."
+    },
+    {
+      "id": "doc-backup-restore",
+      "text": "The synthetic restoration guide describes selecting a backup artifact and checking the restored test records. It refers to the daily-backup checklist for artifact creation."
+    },
+    {
+      "id": "doc-billing-invoice",
+      "text": "The fictional invoice guide describes a sample invoice status field and a preview operation. All amounts and records in this imagined interface are synthetic."
+    },
+    {
+      "id": "doc-billing-refund",
+      "text": "The fictional refund guide describes marking a synthetic transaction for review. It contains no warehouse, transport or equipment specifications."
+    },
+    {
+      "id": "doc-deploy-canary",
+      "text": "The imagined deployment exercise starts by directing a test cohort to a candidate revision. This snippet describes that canary step; a separate rollback guide describes returning to the prior revision."
+    },
+    {
+      "id": "doc-deploy-rollback",
+      "text": "The imagined rollback exercise returns the test cohort to the prior revision and checks the revision marker. It complements the separate canary exercise."
+    },
+    {
+      "id": "doc-incident-sev1",
+      "text": "The synthetic incident worksheet assigns the label SEV1 to its highest exercise severity. This document explains that label and its fictional triage checklist."
+    },
+    {
+      "id": "doc-incident-postmortem",
+      "text": "The synthetic retrospective template contains sections for an exercise timeline and follow-up notes. Severity-label definitions belong to the incident worksheet, not this template."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-01",
+      "question": "Which guide describes enrolling a second authentication factor in the invented application?",
+      "relevantDocIds": ["doc-auth-mfa"]
+    },
+    {
+      "id": "q-02",
+      "question": "Which guides together describe creating a daily backup artifact and restoring its test records?",
+      "relevantDocIds": ["doc-backup-daily", "doc-backup-restore"]
+    },
+    {
+      "id": "q-03",
+      "question": "Which guides together cover the canary exercise and returning its test cohort to the prior revision?",
+      "relevantDocIds": ["doc-deploy-canary", "doc-deploy-rollback"]
+    },
+    {
+      "id": "q-04",
+      "question": "Where is the synthetic exercise's SEV1 label defined?",
+      "relevantDocIds": ["doc-incident-sev1"]
+    },
+    {
+      "id": "q-05",
+      "question": "What is the warehouse robotic-arm torque limit?",
+      "relevantDocIds": []
+    },
+    {
+      "id": "q-06",
+      "question": "Which train platform serves the test workshop?",
+      "relevantDocIds": []
+    }
+  ]
+}

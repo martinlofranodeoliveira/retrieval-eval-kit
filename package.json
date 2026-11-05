@@ -1,0 +1,47 @@
+{
+  "name": "retrieval-eval-kit",
+  "version": "0.1.0",
+  "description": "Offline evaluator of retrieval rankings using Recall@K, MRR@K, source hit rate and abstention decisions on labeled cases.",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "bin": {
+    "retrieval-eval-kit": "./dist/src/cli.js"
+  },
+  "files": [
+    "dist/src",
+    "examples",
+    "README.md",
+    "README.pt-BR.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "cli": "npm run build --silent && node dist/src/cli.js",
+    "demo": "npm run build --silent && node dist/src/demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martinlofranodeoliveira/retrieval-eval-kit.git"
+  },
+  "homepage": "https://lofranotecnologia.com.br",
+  "author": "Lofrano Tecnologia (https://lofranotecnologia.com.br)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "retrieval",
+    "evaluation",
+    "ir",
+    "recall-at-k",
+    "mrr-at-k",
+    "abstention",
+    "offline-evaluation"
+  ],
+  "devDependencies": {
+    "@types/node": "22",
+    "typescript": "7.0.2"
+  }
+}
